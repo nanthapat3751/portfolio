@@ -1,19 +1,18 @@
 /* ── Design Tokens ── */
+/* ── Design Tokens ── */
 :root {
-  --cream: #F8F5F0;
+  --cream: #F0F4FA;        /* off-white อมฟ้า */
   --white: #FFFFFF;
-  --sand: #EDE8E0;
-  --accent: #e36b0f;
-  /* terracotta */
-  --accent2: #1B2651;
-  /* deep navy */
-  --text: #1A1A2E;
-  --muted: #6B6B80;
-  --dim: #A09EA8;
-  --border: #E4DED5;
+  --sand: #E4EBF5;         /* พื้นรอง อมฟ้าอ่อน */
+  --accent: #C9960C;       /* Gold */
+  --accent2: #1a2a5e;      /* Deep Indigo */
+  --text: #0F1B42;         /* Navy เข้ม */
+  --muted: #5C6E9A;        /* Indigo-gray */
+  --dim: #9AA5C0;
+  --border: #D8E2F0;       /* ขอบอมฟ้า */
 
-  --tag-blue-bg: rgba(59, 130, 246, 0.09);
-  --tag-blue-c: #2563EB;
+  --tag-blue-bg: rgba(26, 42, 94, 0.08);
+  --tag-blue-c: #1a2a5e;
   --tag-green-bg: rgba(22, 163, 74, 0.09);
   --tag-green-c: #15803D;
   --tag-purple-bg: rgba(124, 58, 237, 0.09);
@@ -22,10 +21,10 @@
   --font-display: 'Cormorant Garamond', Georgia, serif;
   --font-body: 'Outfit', sans-serif;
 
-  --shadow-sm: 0 2px 8px rgba(27, 38, 81, 0.07);
-  --shadow-md: 0 8px 32px rgba(27, 38, 81, 0.10);
-  --shadow-lg: 0 20px 60px rgba(27, 38, 81, 0.12);
-  --shadow-xl: 0 25px 50px rgba(27, 38, 81, 0.15);
+  --shadow-sm: 0 2px 8px rgba(15, 27, 66, 0.07);
+  --shadow-md: 0 8px 32px rgba(15, 27, 66, 0.10);
+  --shadow-lg: 0 20px 60px rgba(15, 27, 66, 0.12);
+  --shadow-xl: 0 25px 50px rgba(15, 27, 66, 0.15);
   --radius: 14px;
   --radius-lg: 22px;
   --trans: 280ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -90,7 +89,7 @@ body {
   left: 0;
   right: 0;
   z-index: 100;
-  background: rgba(248, 245, 240, 0.88);
+  background: rgba(240, 244, 250, 0.88);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid transparent;
@@ -1447,7 +1446,7 @@ body {
 }
 
 .cert-card {
-  background: linear-gradient(135deg, var(--cream) 0%, rgba(237, 232, 224, 0.6) 100%);
+  background: linear-gradient(135deg, var(--cream) 0%, rgba(228, 235, 245, 0.6) 100%);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 24px;
@@ -1466,14 +1465,14 @@ body {
   right: -50%;
   width: 100px;
   height: 100px;
-  background: radial-gradient(circle, rgba(196, 118, 58, 0.1) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(201, 150, 12, 0.1) 0%, transparent 70%);
   transition: all var(--trans);
   border-radius: 50%;
 }
 
 .cert-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 32px rgba(196, 118, 58, 0.15);
+  box-shadow: 0 12px 32px rgba(201, 150, 12, 0.15);
   border-color: var(--accent);
 }
 
@@ -1603,14 +1602,14 @@ body {
 }
 
 .contact-cta .btn-primary:hover {
-  background: linear-gradient(135deg, #d4884a 0%, #a85c29 100%);
+  background: linear-gradient(135deg, #b8920e 0%, #8f6b08 100%);
   box-shadow: 0 12px 32px rgba(196, 118, 58, 0.4);
 }
 
 /* ═══ FOOTER ═══ */
 .footer {
   background: var(--accent2);
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgb(238, 238, 238);
   padding: 24px 40px;
 }
 
@@ -1799,7 +1798,7 @@ body {
   color: #fff;
   padding: 16px 24px;
   border-radius: var(--radius);
-  box-shadow: 0 8px 24px rgba(27, 38, 81, 0.3);
+  box-shadow: 0 8px 24px rgba(15, 27, 66, 0.3);
   z-index: 1000;
   animation: slideIn 300ms ease, slideOut 300ms ease 2700ms forwards;
   font-size: 14px;
@@ -2307,7 +2306,7 @@ body {
 }
 
 .nav-cv-btn:hover {
-  background: linear-gradient(135deg, var(--accent) 0%, #b56a32 100%);
+  background: linear-gradient(135deg, var(--accent) 0%, #a37a0a 100%);
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(196, 118, 58, 0.3);
 }
