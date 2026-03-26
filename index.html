@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ══ NAVBAR ══ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#about" class="nav-logo">Portfolio<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#brings">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <!-- <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Dark Mode">🌙</button> -->
+      <button class="hamburger" id="hamburger" aria-label="menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about">About</a>
+    <a href="#brings">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- ══ ABOUT ══ -->
+  <section class="section about-hero" id="about">
+    <div class="container">
+      <div class="section-label reveal">About Me</div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <h2 class="section-title">เกี่ยวกับฉัน</h2>
+          <p class="about-role">
+            <span class="typing-text" id="typingText"></span>
+            <span class="cursor-blink"></span>
+          </p>
+          <p>กำลังศึกษาอยู่ที่มหาวิทยาลัยเกษตรศาสตร์ สาขาเทคโนโลยีสารสนเทศ
+            สนใจการนำข้อมูลและเทคโนโลยีมาใช้ช่วยแก้ปัญหาทางธุรกิจ
+            โดยเฉพาะการวิเคราะห์ความต้องการและมองภาพรวมของระบบให้เข้าใจง่ายขึ้น</p>
+
+          <p>ชอบทำงานที่ต้องจัดระเบียบข้อมูลที่ซับซ้อนให้กลายเป็นสิ่งที่ทีมสามารถนำไปใช้ต่อได้จริง
+            มีความสนใจในด้าน Process Improvement, Requirement เพื่อช่วยให้การตัดสินใจเร็วและชัดเจนขึ้น</p>
+          <div class="about-pills">
+            <span>Problem Solver</span>
+            <span>Detail-Oriented</span>
+            <span>Quick Learner</span>
+          </div>
+        </div>
+        <div class="about-visual reveal reveal-delay">
+          <div class="avatar-wrap">
+            <div class="avatar-placeholder clickable-image">
+              <img src="../images/myku.png" alt="Profile Photo">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ WHAT I BRING ══ -->
+  <section class="section section-alt" id="brings">
+    <div class="container">
+      <div class="section-label reveal">Skills &amp; technology</div>
+      <h2 class="section-title reveal">Tools<br /><em>that I use.</em></h2>
+      <div class="tech-scroll">
+        <div class="tech-track" id="techTrack">
+          <div class="tech-pill">JavaScript</div>
+          <div class="tech-pill">Node.js</div>
+          <div class="tech-pill">Python</div>
+          <div class="tech-pill">Docker</div>
+          <div class="tech-pill">C</div>
+          <div class="tech-pill">Java</div>
+        </div>
+        <div class="brings-visual-grid">
+          <div class="brings-item reveal" data-skill="Data Analysis">
+            <div class="brings-icon">
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <h4>DataBase</Base>
+            </h4>
+            <p>SQL · PHP · Firebase · Spring Boot</p>
+          </div>
+          <div class="brings-item reveal reveal-delay" data-skill="Visualization">
+            <div class="brings-icon"><i class="fa-brands fa-figma"></i></div>
+
+            <h4>Visualization &amp; UX</h4>
+            <p>Wireframing · Prototype</p>
+          </div>
+          <div class="brings-item reveal reveal-delay-2" data-skill="Programming">
+            <div class="brings-icon">
+              <i class="fa-brands fa-python"></i>
+            </div>
+            <h4>Programming</h4>
+            <p>Python · JavaScript · Node.js · Java </p>
+            <p>C · HTML · CSS · Flutter · Angular · C++ · Dart</p>
+          </div>
+          <div class="brings-item reveal reveal-delay" data-skill="Communication">
+            <div class="brings-icon"><i class="fa-solid fa-face-smile"></i></div>
+
+            <h4>Stakeholder</h4>
+            <p>Presentation · Confluence</p>
+          </div>
+          <div class="brings-item reveal reveal-delay-2" data-skill="Project Tools">
+            <div class="brings-icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h4>Project Tools</h4>
+            <p>Draw.io · Miro · Postman · Visual Studio Code · Visio · IntelliJ IDEA · Spyder · DBeaver · Netpie · Wokwi
+              · Excel · Word · PowerPoint · Canva</p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- ══ PROJECTS ══ -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-label reveal">Projects</div>
+      <h2 class="section-title reveal">Work that speaks<br /><em>louder than words.</em></h2>
+
+      <div class="projects-grid">
+        <div class="project-card reveal">
+          <!--<div class="pc-header">
+            <span class="proj-tag tag-blue">Data Analysis</span>
+            <span class="proj-year">2024</span>
+          </div>-->
+          <h3>IoT Project เครื่องวัดแฮลกอฮอล์</h3>
+          <div class="project-img">
+            <img src="../images/IoT.jpg" alt="IoT Alcohol Detector">
+          </div>
+          <p>ออกแบบและพัฒนา IoT เครื่องวัดแอลกอฮอล์ โดยใช้ Wokwi จำลองการทำงานของอุปกรณ์และประดิษฐ์อุปกรณ์จริงด้วย
+            แล้วมีการสร้างแอพ เชื่อมต่อ Firebase สำหรับจัดเก็บข้อมูลแบบ real-time
+            สามารถแสดงผลและติดตามข้อมูลได้ทันที</p>
+          <div class="proj-stack">
+            <span>Visual Studio Code</span><span>Firebase</span><span>Wokwi</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal reveal-delay">
+          <!--<div class="pc-header">
+            <span class="proj-tag tag-green">UX / Figma</span>
+            <span class="proj-year">2024</span>
+          </div>-->
+          <h3>ดูงาน บริษัท อินเทอร์เน็ตแห่งประเทศไทย</h3>
+          <div class="project-img">
+            <img src="../images/INET.jpg" alt="INET Data Center">
+          </div>
+          <p>
+            เข้าศึกษาดูงาน Data Center ของบริษัท อินเทอร์เน็ตแห่งประเทศไทย (INET)
+            เพื่อเรียนรู้โครงสร้างระบบเครือข่าย การจัดการเซิร์ฟเวอร์ และมาตรฐานความปลอดภัยของศูนย์ข้อมูล
+            ช่วยให้เข้าใจการทำงานของระบบ IT Infrastructure ในสภาพแวดล้อมจริง
+          </p>
+          <div class="proj-stack">
+            <span>network</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <!--<div class="pc-header">
+            <span class="proj-tag tag-purple">Python</span>
+            <span class="proj-year">2023</span>
+          </div>-->
+          <h3>Zahira Farm</h3>
+          <div class="project-img">
+            <img src="../images/Zahira.jpg" alt="Zahira Farm">
+          </div>
+          <p>
+            เข้าศึกษาดูงาน Zahira Farm เพื่อเรียนรู้การนำเทคโนโลยี IoT มาประยุกต์ใช้ในภาคเกษตร
+            ช่วยให้เข้าใจการใช้เทคโนโลยีเพื่อเพิ่มประสิทธิภาพและลดต้นทุนในการดำเนินงาน
+          </p>
+          <div class="proj-stack">
+            <span>IoT</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <!--<div class="pc-header">
+            <span class="proj-tag tag-purple">Python</span>
+            <span class="proj-year">2023</span>
+          </div>-->
+          <h3>เปิดโลกทักษะ Aiและทักษะทางไซเบอร์</h3>
+          <div class="project-img">
+            <img src="../images/skill_ai.jpg" alt="Skill AI">
+          </div>
+          <p>
+            เข้าร่วมอบรม “เปิดโลกทักษะ AI และทักษะทางไซเบอร์” เพื่อเรียนรู้พื้นฐานเกี่ยวกับปัญญาประดิษฐ์ (AI)
+            และความปลอดภัยทางไซเบอร์ (Cybersecurity) รวมถึงแนวทางการประยุกต์ใช้เทคโนโลยีในงานจริง
+            ช่วยเสริมความเข้าใจด้านเทคโนโลยีสมัยใหม่และการป้องกันความเสี่ยงทางดิจิทัล
+          </p>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ EDUCATION ══ -->
+  <section class="section section-alt" id="education">
+    <div class="container">
+      <div class="section-label reveal">Education</div>
+      <h2 class="section-title reveal">Academic<br /><em>Background.</em></h2>
+      <div class="timeline">
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-year">2023 – Present</div>
+            <!-- <h3>ปริญญาตรี สาขาเทคโนโลยีสารสนเทศ</h3> -->
+            <div class="tl-place">มหาวิทยาลัยเกษตรศาตร์ · คณะศิลปศาสตร์และวิทยาศาสตร์ · สาขาเทคโนโลยีสารสนเทศ</div>
+            <p>เกรดเฉลี่ย: <strong>2.82</strong></p>
+            <div class="tl-highlights">
+              <!-- <span>วิชาเอก: Business Analysis</span> -->
+              <!-- <span>Senior Project: [ชื่อ Project]</span> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal reveal-delay">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-year">2020 – 2023</div>
+            <h3>มัธยมศึกษาตอนปลาย</h3>
+            <div class="tl-place">โรงเรียนพระปฐมวิทยาลัย · แผนการเรียนศิลป์-คำนวณ</div>
+            <p>เกรดเฉลี่ย: <strong>3.60</strong></p>
+            <div class="tl-highlights">
+              <!-- <span>กิจกรรม: [ระบุ]</span> -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CERTIFICATES ══ -->
+  <section class="section" id="certificates">
+    <div class="container">
+      <div class="section-label reveal">Certificates</div>
+      <h2 class="section-title reveal">Always learning,<br /><em>always growing.</em></h2>
+      <div class="certs-grid">
+        <div class="cert-card reveal reveal-delay">
+          <div class="brings-icon">
+            <i class="fa-solid fa-certificate" style="color: rgb(215, 150, 19);"></i>
+          </div>
+          <img src="../images/css_certificate.jpg" class="cert-img">
+          <div class="cert-info">
+            <h4>CSS (Basic) Certificate</h4>
+            <span class="cert-issuer">Issued by HackerRank</span>
+            <span class="cert-date">2024</span>
+          </div>
+        </div>
+
+        <div class="cert-card reveal reveal-delay">
+          <div class="brings-icon">
+            <i class="fa-solid fa-certificate" style="color: rgb(215, 150, 19);"></i>
+          </div>
+          <img src="../images/java_basic certificate.jpg" class="cert-img">
+          <div class="cert-info">
+            <h4>Java (Basic) Certificate</h4>
+            <span class="cert-issuer">Issued by HackerRank</span>
+            <span class="cert-date">2024</span>
+          </div>
+        </div>
+
+        <div class="cert-card reveal reveal-delay">
+          <div class="brings-icon">
+            <i class="fa-solid fa-certificate" style="color: rgb(215, 150, 19);"></i>
+          </div>
+          <img src="../images/javascript_basic certificate.jpg" class="cert-img">
+          <div class="cert-info">
+            <h4>JavaScript (Basic) Certificate</h4>
+            <span class="cert-issuer">Issued by HackerRank</span>
+            <span class="cert-date">2024</span>
+          </div>
+        </div>
+
+
+        <div class="cert-card reveal reveal-delay">
+          <div class="brings-icon">
+            <i class="fa-solid fa-certificate" style="color: rgb(215, 150, 19);"></i>
+          </div>
+          <img src="../images/nodejs_basic certificate.jpg" class="cert-img">
+          <div class="cert-info">
+            <h4>Node.js (Basic) Certificate</h4>
+            <span class="cert-issuer">Issued by HackerRank</span>
+            <span class="cert-date">2024</span>
+          </div>
+        </div>
+
+
+        <div class="cert-card reveal reveal-delay">
+          <div class="brings-icon">
+            <i class="fa-solid fa-certificate" style="color: rgb(215, 150, 19);"></i>
+          </div>
+          <img src="../images/sql_intermediate certificate.jpg" class="cert-img">
+          <div class="cert-info">
+            <h4>SQL (Intermediate) Certificate</h4>
+            <span class="cert-issuer">Issued by HackerRank</span>
+            <span class="cert-date">2024</span>
+          </div>
+        </div>
+
+
+        <div class="cert-card reveal reveal-delay">
+          <div class="brings-icon">
+            <i class="fa-solid fa-certificate" style="color: rgb(215, 150, 19);"></i>
+          </div>
+          <img src="../images/python_basic certificate.jpg" class="cert-img">
+          <div class="cert-info">
+            <h4>Python (Basic) Certificate</h4>
+            <span class="cert-issuer">Issued by HackerRank</span>
+            <span class="cert-date">2024</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CONTACT ══ -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="contact-wrap reveal">
+        <div class="section-label">Contact</div>
+        <h2 class="section-title">Let's work<br /><em>together.</em></h2>
+        <p class="contact-desc">มีโปรเจกต์นพูดคุยเพิ่มเติม? ยินดีรับ Opportunity ทุกรูปแบบครับ</p>
+        <div class="contact-links">
+          <a href="https://www.instagram.com/ntpxtt.s/" class="contact-item">
+            <div class="brings-icon"><i class="fa-brands fa-instagram" style="color: rgb(0, 0, 0);"></i></i></div>
+            <div>
+              <div class="ci-label">Intragram</div>
+              <div class="ci-val">ntpxtt.s</div>
+            </div>
+          </a>
+          <a href="https://www.facebook.com/nanthapat.tang?locale=th_TH" class="contact-item">
+            <div class="brings-icon"><i class="fa-brands fa-facebook" style="color: rgb(0, 0, 0);"></i></i></i></div>
+            <div>
+              <div class="ci-label">Facebook</div>
+              <div class="ci-val">nanthapat.tang</div>
+            </div>
+          </a>
+          <a href="https://github.com/nanthapat3751" class="contact-item" target="_blank">
+            <div class="brings-icon"> <i class="fa-brands fa-github" style="color: rgb(0, 0, 0);"></i></div>
+            <div>
+              <div class="ci-label">GitHub</div>
+              <div class="ci-val">github.com/nanthapat3751</div>
+            </div>
+          </a>
+          <div class="contact-item">
+            <div class="brings-icon"><i class="fa-regular fa-envelope" style="color: rgb(0, 0, 0);"></i></div>
+            <div>
+              <div class="ci-label">Gmail</div>
+              <div class="ci-val">tangpun2547@gmail.com</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="nav-logo"><span class="dot">.Profolio</span></span>
+
+      <a href="#about" class="back-top">↑ Top</a>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" aria-label="Back to top" title="Back to Top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
